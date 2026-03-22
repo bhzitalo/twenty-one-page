@@ -1,0 +1,288 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-top {
+    width: 200px;
+    height: 75px;
+    padding-top: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 16px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #fde200;
+    border: 2px solid #fde200;
+    font-weight: bold;
+}
+
+ul a:hover {
+    color: #ffffff;
+}
+
+/* TITULOS */
+h2 {
+    color: #db2422;
+    text-align: center;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.grade-albuns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    gap: 50px;
+    justify-content: center;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    gap: 50px;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.grade-ouca {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+.card-ouca {
+    width: 50px;
+    height: 50px;
+    background-color: #101010c3;
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.card-ouca img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card-ouca:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+}
+
+.ouca-container {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card {
+    width: 220px;
+    background-color: #101010c3;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding: 14px;
+    border: 1px solid #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.ano-lancamento {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.btn-ver-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #db2422;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-ver-mais:hover {
+    background-color: #370909;
+    color: #aaa;
+}
+
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.carrossel {
+    position: relative;
+    width: 70%;
+    height: 400px;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carrossel img {
+    width: 100%;
+    display: none;
+}
+
+.carrossel img.ativa {
+    display: block;
+}
+
+.btn-carrossel-prev,
+.btn-carrossel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fde200;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-carrossel-prev {
+    left: 10px;
+}
+
+.btn-carrossel-next {
+    right: 10px;
+}
+
+.tracklist {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.tracklist li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.numero {
+  color: #888;
+  width: 30px;
+}
+
+.titulo {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.duracao {
+  color: #aaa;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+/* caixa principal */
+.arquivo-box {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #0d0d0d;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    font-family: monospace;
+    position: relative;
+}
+
+/* tag topo */
+.arquivo-box .tag {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: #111;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #fde200;
+    border: 1px solid #fde200;
+    border-radius: 4px;
+}
+
+/* texto */
+.arquivo-box p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* destaque */
+.arquivo-box .highlight {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* final */
+.arquivo-box .final {
+    margin-top: 20px;
+    color: #fde200;
+    font-style: italic;
+}
+
+/* efeito hover leve */
+.arquivo-box:hover {
+    border-color: #fde200;
+    box-shadow: 0 0 25px rgba(82,165,53,0.2);
+}
