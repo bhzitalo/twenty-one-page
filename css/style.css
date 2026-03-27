@@ -39,6 +39,22 @@ ul a:hover {
     color: #ffffff;
 }
 
+.btn-voltar {
+    text-decoration: none;
+    color: #000000;
+    background-color: #fde200;
+    border: 2px solid #fde200;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hover igual ao dos links */
+.btn-voltar:hover {
+    color: #ffffff;
+}
+
 /* TITULOS */
 h2 {
     color: #db2422;
